@@ -1,0 +1,256 @@
+.contenedor
+{
+    display: flex;
+    padding: 20px 50px;
+}
+.todo-evento
+{
+    box-sizing: border-box;
+    width:70%;
+}
+#imgPortada
+{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    border-radius:var(--radiusmin) var(--radiusmin) 0 0;
+    background:var(--color1);
+}
+#imgPortada img
+{
+    width:100%;
+    height: 100%;
+    border-radius:var(--radiusmin) var(--radiusmin) 0 0;
+}
+.datos-evento
+{
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    border-radius:0 0 var(--radiusmin) var(--radiusmin);
+    border: 1px solid var(--color3);
+    display: flex;
+    padding: 20px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+#imgMini
+{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform: translate(0%, -40%);
+    border-radius: var(--radiusmin);
+    box-shadow: 22px 21px 79px -12px rgba(0,0,0,0.34);
+    margin-right: 50px;
+    background:var(--color1);
+}
+#imgMini img
+{
+    width:100%;
+    height: 100%;
+    border-radius: var(--radiusmin);
+}
+.info-evento
+{
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.evento-title
+{
+    padding: 5px;
+    border: 1px solid var(--color3);
+    border-radius: var(--radiusmin);
+    font-size: 1.5em;
+}
+.datitos
+{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.datitos p
+{
+    margin-right: 50px;
+    margin-bottom:20px;
+}
+.datitos input
+{
+    padding: 5px;
+    border: 1px solid var(--color3);
+    border-radius: var(--radiusmin);
+}
+.descript
+{
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    border-radius: var(--radiusmin);
+    border: 1px solid var(--color3);
+    padding: 20px 50px;
+    margin-bottom:10px;
+}
+.entradas
+{
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    border-radius: var(--radiusmin);
+    border: 1px solid var(--color3);
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.entradas a
+{
+    background: var(--color2);
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+/* sidebar */
+.sidebar
+{
+    box-sizing: border-box;
+    width:calc(30% - 30px);
+    margin-left: 30px;
+}
+.ad
+{
+    box-sizing: border-box;
+    width:100%;
+    padding:10px;
+    background: #fff;
+    border-radius: var(--radiusmin);
+    border: 1px solid var(--color3);
+    margin-bottom: 10px;
+}
+.ad img
+{
+    width:100%;
+}
+.envio
+{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.envio input
+{
+    background: var(--color2);
+    border-radius: var(--radiusmin);
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 20px;
+    border: 0;
+    font-size: 1.5em;
+}
+label
+{
+    position: absolute;
+    background: #000;
+    padding: 5px;
+    color:#fff;
+    cursor: pointer;
+    font-size: .8em;
+    margin:10px;
+    border: 1px solid var(--color3);
+    top:0;
+}
+.entradas input
+{
+    box-sizing: border-box;
+    border-radius: var(--radiusmin);
+    border: 1px solid var(--color3);
+    width: 50px;
+    height: 100%;
+}
+.descript textarea
+{
+    width:100%;
+    padding: 10px;
+    border-radius: var(--radiusmin);
+    border: 1px solid var(--color3);
+}
+
+/* entradas */
+.entradas-contain
+{
+    box-sizing: border-box;
+    padding-top: 95px;
+    width: 100%;
+    display: none;
+    transition: 0;
+}
+.entradas-contain form
+{
+    box-sizing: border-box;
+    border: 1px solid var(--color3);
+    padding: 20px;
+    background: #fff;
+    border-radius: var(--radiusmin);
+}
+.ticket
+{
+    box-sizing: border-box;
+    margin-right: 20px;
+    width:100%;
+}
+.ticket .precio, .ticket .cantidad, .ticket .total
+{
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid var(--color3);
+    border-bottom: 1px solid var(--color3);
+}
+.ticket .cantidad, .ticket .total
+{
+    border-top: 0;
+}
+.mas, .menos
+{
+    width: 100px;
+    font-size: 1.5em;
+    text-align: center;
+    cursor: pointer;
+}
+.numero-entradas
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+}
+.numero-entradas input
+{
+    width: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: var(--radiusmin);
+    border: 1px solid var(--color3);
+}
+.entradas-contain input[type="submit"]
+{
+    background: var(--color2);
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    width:20%;
+    border: 0;
+    padding: 10px;
+}
