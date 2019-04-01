@@ -1,13 +1,8 @@
 <?php
 require_once("cabeza.php");
 ?>
-
-      <!-- <div class="panel-header panel-header-lg">
   
-  <canvas id="bigDashboardChart"></canvas>
-  
-  
-</div> -->
+ 
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
@@ -20,8 +15,8 @@ require_once("cabeza.php");
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Capacity</p>
-                      <p class="card-title">150GB
+                      <p class="card-category">Conectados</p>
+                      <p class="card-title">---
                         <p>
                     </div>
                   </div>
@@ -179,6 +174,7 @@ require_once("cabeza.php");
               </div>
             </div>
           </div>
+        </div>
         </div>
 <?php
 require_once("footer.php");

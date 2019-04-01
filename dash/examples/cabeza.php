@@ -19,7 +19,7 @@
   <link href="../assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
-  <script src="js/funciones.js"></script>
+  <script src="../assets/js/funciones.js"></script>
 </head>
 
 <body class="">
@@ -49,16 +49,19 @@
             </a>
           </li>
 
-          <li data-toggle="collapse" data-target="#demo">
-            <a href="#">
+          <li data-toggle="collapse">
+            <a href="editarUser.php">
               <i class="nc-icon nc-single-02"></i>
               <p>Usuario</p>
             </a>
-            <div id="demo" class="collapse">
-                <a class="dropdown-item" href="registroUser.php">Registrar Usuario</a>
-                <a class="dropdown-item" href="editarUser.php">Editar Usuario</a>
-            </div>
+          </li>
+          
 
+          <li>
+            <a href="categoria.php">
+              <i class="nc-icon nc-tag-content"></i>
+              <p>Categoria</p>
+            </a>
           </li>
 
           <li>
@@ -106,7 +109,7 @@
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="error.php" target="_blank">Ir a Sitio</a>
+                  <a class="dropdown-item" href="../../index.php" target="_blank">Ir a Sitio</a>
                   <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Cerrar Sessión</a>
                 </div>
               </li>
